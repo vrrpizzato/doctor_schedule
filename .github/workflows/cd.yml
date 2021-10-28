@@ -3,7 +3,7 @@ name: Gigalixir Continuous Deployment
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   test:
     name: build and test
