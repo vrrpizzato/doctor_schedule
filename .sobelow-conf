@@ -1,0 +1,12 @@
+[
+  verbose: true,
+  private: false,
+  skip: false,
+  router: "",
+  exit: "low",
+  format: "txt",
+  out: "",
+  threshold: "low",
+  ignore: ["XSS.Raw", "Traversal", "Config.HTTPS", "Config.CSP"],
+  ignore_files: [""]
+]
