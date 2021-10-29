@@ -1,4 +1,4 @@
-FROM elixir:1.9.0-alpine AS build
+FROM elixir:1.10.0-alpine AS build
 
 # install build dependencies
 RUN apk add --no-cache build-base npm git python
@@ -43,7 +43,7 @@ RUN chown nobody:nobody /app
 
 USER nobody:nobody
 
-COPY --from=build --chown=nobody:nobody /app/_build/prod/rel/my_app ./
+COPY --from=build --chown=nobody:nobody /app/_build/prod/rel/doctor_schedule ./
 
 ENV HOME=/app
 
