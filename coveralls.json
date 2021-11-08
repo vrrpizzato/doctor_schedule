@@ -14,13 +14,13 @@
     ],
   
     "skip_files": [
-      "lib/blog/application.ex",
-      "lib/blog/release.ex",
-      "lib/blog_web.ex",
-      "lib/blog_web/views/error_helpers.ex",
+      "lib/doctor_schedule/application.ex",
+      "lib/doctor_schedule/release.ex",
+      "lib/doctor_schedule_web.ex",
+      "lib/soctor_schedule_web/views/error_helpers.ex",
       "test/support/channel_case.ex",
       "test/support/data_case.ex",
-      "lib/blog_web/telemetry.ex"
+      "lib/doctor_schedule_web/telemetry.ex"
     ],
   
     "coverage_options": {
