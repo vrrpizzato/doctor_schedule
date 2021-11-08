@@ -1,3 +1,5 @@
+# PRODUCTION ENVIRONMENT
+
 FROM elixir:1.10.0-alpine AS build
 
 # install build dependencies
@@ -26,6 +28,7 @@ COPY priv priv
 COPY assets assets
 RUN npm run --prefix ./assets deploy
 RUN mix phx.digest
+RUN MIX_ENV=prod mix release
 
 # compile and build release
 COPY lib lib

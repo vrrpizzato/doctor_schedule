@@ -16,7 +16,8 @@ config :doctor_schedule, DoctorSchedule.Repo,
 # you can enable the server option below.
 config :doctor_schedule, DoctorScheduleWeb.Endpoint,
   http: [port: 4002],
-  server: false
+  server: false,
+  check_origin: false
 
 # Print only warnings and errors during test
 config :logger, level: :warn
