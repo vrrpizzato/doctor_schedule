@@ -41,7 +41,7 @@ defmodule DoctorSchedule.Accounts.Entities.User do
     )
     |> validate_length(:password,
       min: 8,
-      max: 16,
+      max: 32,
       message: "password must be between 8 to 16 characters."
     )
     |> validate_confirmation(:password)
