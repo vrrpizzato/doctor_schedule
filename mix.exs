@@ -56,7 +56,8 @@ defmodule DoctorSchedule.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:sobelow, "~> 0.8", only: :dev},
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, "~> 0.10", only: :test},
+      {:argon2_elixir, "~> 2.0"}
     ]
   end
 
